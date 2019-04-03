@@ -1,0 +1,18 @@
+<h1>REGISTER HERE!!</h1>
+<input type="text" placeholder='Username' ng-model='username'>
+<br>
+<input type="text" placeholder='Password' ng-model='password'>
+<br>
+<input type="text" placeholder='First Name' ng-model='fname'>
+<br>
+<input type="text" placeholder='Lastname' ng-model='lname'>
+<br>
+<input type="text" placeholder='Phone' ng-model='phone'>
+<br>
+Male:<input type="radio" ng-model='gender' ng-value='"male"'>
+Female:<input type="radio" ng-model='gender' ng-value='"female"'>
+<br><br>
+<button ng-click='register()'>Register</button>
+<br>
+
+<p>{{error}}</p>

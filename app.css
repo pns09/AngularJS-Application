@@ -1,0 +1,64 @@
+body,html{
+margin: 0% auto;
+width:80%;
+text-align: center;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li a{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color:#E23237;
+}
+button{
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+}
+button:hover {
+    background-color:#E23237;
+  }
+  input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  input[type=radio]{
+    font-size: 20px;
+  }
+
+  p{
+   color: #E23237;
+   font-size: 20px;
+  }
+ 
+  

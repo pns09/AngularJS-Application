@@ -1,0 +1,23 @@
+<br><br>
+<table border=2 style="width: 100%">
+    <tr>
+        <td>
+            <h3>SENDER</h3>
+        </td>
+        <td>
+            <h3>MESSAGES</h3>
+        </td>
+        <td>
+            <h3>DELETE</h3>
+        </td>
+        <td>
+            <h3>Important</h3>
+        </td>
+    </tr>
+    <tr ng-repeat='properties in urmsg track by $index'>
+        <td>{{properties.sender}}</td>
+        <td><a href="#/message/{{$index}}">{{properties.message}}</a></td>
+        <td><button ng-click='remove(properties)'>Delete</button></td>
+        <td ng-click='update(properties)'>{{properties.important}}</td>
+
+</table>

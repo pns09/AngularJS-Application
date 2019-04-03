@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assessment AngJs</title>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src='https://code.angularjs.org/1.5.5/angular-route.min.js'></script>
+    <script src='app.js'></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body ng-app='newapp' ng-controller="mainController">
+    <ul>
+        <li><a href="#/home" ng-class="{active:isActive('/home')}" ng-show = "logged_in">Home</a></li>
+        <li><a href="#/message" ng-class="{active:isActive('/message')}" ng-show = "logged_in">Message</a></li>
+        <li><a href="#/logout" style="float:right" ng-class="{active:isActive('/logout')}" ng-show = "logged_in" ng-click = "logout()">LogOut</a></li>
+        <li><a href="#/logout" ng-class="{active:isActive('/logout')}" ng-show = "logged_out">LogIn</a></li>
+        <li><a href="#/signup" ng-class="{active:isActive('/signup')}" ng-show = "logged_out">Register</a></li>
+
+    </ul>
+
+
+    <div ng-view=''></div>
+</body>
+
+</html>
